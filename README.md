@@ -6,13 +6,13 @@ How it works.
      
 Each register has a control register, which is not accable from the op code. this can be nop, add, move, div.. etc     
 So the register control code is load from memory for each reister.  
-IE:  Setup
-     {
-     LDcontroler R0, "ADD R0,R1,R3"     
-     LDcontroler R1, "Jump on R0=zero to, @R1=$lable1"     
-     LDcontroler R3, "Jump on R3=NotEq to 4, to @R4=$lable2"     
+IE:  Setup     
+     {     
+     LDcontroler R0, "ADD R0,R1,R3"          
+     LDcontroler R1, "Jump on R0=zero to, @R1=$lable1"          
+     LDcontroler R3, "Jump on R3=NotEq to 4, to @R4=$lable2"          
      }     
-     R0,R1,R3 (executes ADD R0=R1,R3) and jump to #lable if R0 = Zero, Else Jump $lable2          
+     R0,R1,R3 (executes ADD R0=R1,R3) and jump to #lable if R0 = Zero, Else Jump $lable2               
 $lable1:  
     code....      
 $lable2:          
