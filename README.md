@@ -9,8 +9,8 @@ So the register control code is load from memory for each reister.
 IE:  Setup
      {
      LDcontroler R0, "ADD R0,R1,R3"     
-     LDcontroler R1, "Jump on R0=zero @R1=$lable1"     
-     LDcontroler R3, "Jump on R3=Notequ 4 @R3=$lable2"     
+     LDcontroler R1, "Jump on R0=zero to, @R1=$lable1"     
+     LDcontroler R3, "Jump on R3=NotEq to 4, to @R4=$lable2"     
      }     
      R0,R1,R3 (executes ADD R0=R1,R3) and jump to #lable if R0 = Zero, Else Jump $lable2          
 $lable1:  
