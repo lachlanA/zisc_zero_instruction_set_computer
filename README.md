@@ -4,7 +4,7 @@ Example 32 bit computer have 8 registers. So the Op code can select 8 32bit regi
 It has only one Assembler code: R0,R1,R2,R3,R4,R5,R6,R7     
 How it works.
      
-Each register has a control register, which is not accable from the op code. this can be nop, add, move.. etc
+Each register has a control register, which is not accable from the op code. this can be nop, add, move, div.. etc     
 So the register control code is load from memory for each reister.  
 IE:  Setup
      {
