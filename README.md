@@ -1,7 +1,7 @@
-I CPU without any instruction set.
-Opcode only has register address.
-Example 32 bit computer have 8 registers. So the Op code can select 8 32bit registers at the same time.
-It has only Assembler one assembler code: R0,R1,R2,R3,R4,R5,R6,R7
+I CPU without any instruction set.     
+Opcode only has register address.     
+Example 32 bit computer have 8 registers. So the Op code can select 8 32bit registers at the same time.     
+It has only Assembler one assembler code: R0,R1,R2,R3,R4,R5,R6,R7     
 How it works.
 the option is loaded in to the register side controler. this can be nop, add, move.. etc
 So the code is load from memory in the side  controle register.  
